@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание на позицию верстальщик</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="main-nav">
+        <a class="main-nav__enter" href="#">Личный кабинет</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--green" href="#">Раздел1</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--blue" href="#">Раздел2</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--orange" href="#">Раздел3</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--gray" href="#">Раздел4</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--red" href="#">Раздел5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="about">
+      <p>☀ TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+      <p>Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собстввенному
+        контакт-центру.
+      </p>
+    </aside>
+    <main class="content">
+        <div class="content__title">
+          <h1>Заполните форму</h1>
+          <ul class="steps">
+            <li class="steps__item"><a class="steps__link  steps__link--done" href="#">1</a></li>
+            <li class="steps__item"><a class="steps__link  steps__link--done" href="#">2</a></li>
+            <li class="steps__item"><a class="steps__link  steps__link--current" href="#">3</a></li>
+            <li class="steps__item"><a class="steps__link" href="#">4</a></li>
+            <li class="steps__item"><a class="steps__link" href="#">5</a></li>
+          </ul>
+        </div>
+        <form action="#" class="form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Общая информация</legend>
+            <label class="field-text">
+              <label class="field-text__name" for="surname">Фамилия</label>
+              <input class="field-text__input" id="surname" type="text">
+            </label>
+            <label class="field-text">
+              <label class="field-text__name" for="name">Имя</label>
+              <input class="field-text__input" id="name" type="text">
+            </label>
+            <label class="field-text">
+              <label class="field-text__name" for="patronymic">Отчество</label>
+              <input class="field-text__input" id="patronymic" type="text">
+            </label>
+            <label class="field-text">
+              <label class="field-text__name">Меняли фамилию?</label>
+              <label class="field-radio">
+                <input class="field-radio__input" type="radio"  name="change" id="yes">
+                <label class="field-radio__name" for="yes">Да</label>
+                <input class="field-radio__input" type="radio"  name="change" id="no" checked>
+                <label class="field-radio__name"  for="no">Нет</label>
+              </label>
+            </label>
+            <label class="field-text">
+              <label class="field-text__name">Пол</label>
+              <label class="field-radio">
+                <input class="field-radio__input" type="radio"  name="sex" id="male" checked>
+                <label class="field-radio__name" for="male">Муж</label>
+                <input class="field-radio__input" type="radio"  name="sex" id="female">
+                <label class="field-radio__name"  for="female">Жен</label>
+              </label>
+            </label>
+            <label class="field-text">
+              <label class="field-text__name">Семейное положение</label>
+              <select>
+                <option>Женат / Замужем</option>
+                <option>Холост / Не замужем</option>
+                <option>Разведен(а)</option>
+                <option>Прочее</option>
+              </select>
+            </label>
+            <label class="field-text">
+              <label class="field-text__name">Гражданство</label>
+              <select>
+                <option>Российская Федерация</option>
+                <option>Другое</option>
+              </select>
+            </label>
+            <label class="field-text">
+              <label class="field-text__name">Дата рождения</label>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+              </select>
+              <select>
+                <option>января</option>
+                <option>февраля</option>
+                <option>марта</option>
+                <option>апреля</option>
+                <option>мая</option>
+                <option>июня</option>
+                <option>июля</option>
+                <option>августа</option>
+                <option>апреля</option>
+                <option>сентября</option>
+                <option>октября</option>
+                <option>ноября</option>
+                <option>декабря</option>
+              </select>
+              <select>
+                <option>1970</option>
+                <option>1971</option>
+                <option>1972</option>
+                <option>1973</option>
+                <option>1974</option>
+                <option>1975</option>
+                <option>1976</option>
+                <option>1977</option>
+                <option>1978</option>
+                <option>1979</option>
+                <option>1980</option>
+              </select>
+          </label>
+            <label class="field-text  field-text--block">
+              <div class="field-text__input-wrap">
+                <label class="field-text__name" for="birthplace">Место рождения</label>
+                <div class="field-text__input-wrap">
+                  <input class="field-text__input  field-text__input--block" id="birthplace" type="text" name="birthplace">
+                  <div class="field-text__help-text">Например, Россия, Комсомольск-на-Амуре</div>
+                </div>
+              </div>
+            </label>
+          </fieldset>
+          <div class="btn-group">
+            <button class="btn  btn--disable  btn--prev"><span></span>Назад</button>
+            <button class="btn  btn--main  btn--next"><span></span>Далее</button>
+          </div>
+
+        </form>
+      </main>
+  </div>
+</body>
+
+</html>

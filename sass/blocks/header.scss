@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  height: auto;
+  float: right;
+  margin: 40px 0;
+  border-radius: 15px;
+  background: $body-bg;
+  box-shadow: $shadow;
+  border: 1px solid $gray-lighter;
+}
+@media (min-width:$break-desktop) {
+  .header {
+    width: 784px;
+  }
+}

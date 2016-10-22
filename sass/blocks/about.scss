@@ -1,0 +1,22 @@
+.about{
+  width: 100%;
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width:$break-tablet) {
+  .about {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 30px;
+    }
+}
+
+@media (min-width:$break-desktop) {
+  .about {
+    width: 200px;
+    float: left;
+    padding-top: 165px;
+    margin: 0;
+  }
+}

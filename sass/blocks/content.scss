@@ -1,0 +1,28 @@
+.content {
+  width: 100%;
+
+  &__title {
+    @include clearfix;
+  }
+
+  &__title h1 {
+    font-size: $font-size--h1;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+@media (min-width:$break-tablet) {
+  .content {
+    width: 100%;
+  }
+
+  .content__title h1 {
+    float: left;
+  }
+}
+@media (min-width:$break-desktop) {
+  .content {
+    width: 784px;
+    float: right;
+  }
+}

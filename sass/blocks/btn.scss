@@ -1,0 +1,203 @@
+.btn {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: $field-padding-vertical $field-padding-horizontal;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  border-radius: $border-radius;
+  color: #ffffff;
+  border: none;
+  text-shadow: 0 1px 1px $gray;
+  background-color: $gray-light;
+  box-shadow: 0 4px 10px -4px $gray-lightest inset,0 -4px 10px -4px $gray inset;
+
+  &--hover,
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+  }
+
+  &--active,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+  }
+
+  &--disabled,
+  &:disabled {
+    cursor: not-allowed;
+    opacity: $opacity;
+    color: $text-color;
+    background: $gray-lighter;
+    border-color: $gray-light;
+  }
+
+  &--main {
+    color: #fff;
+    background-color: $color-main;
+    box-shadow: 0 4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+
+    &--hover,
+    &:hover {
+      background-color: $color-main;
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--active,
+    &:active,
+    &:focus {
+      background-color: $color-main;
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--disabled,
+    &:disabled {
+      background: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--danger {
+    background: $color-danger;
+    border: 1px solid $color-danger;
+
+    &--hover,
+    &:hover {
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--active,
+    &:active,
+    &:focus {
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--disabled,
+    &:disabled {
+      background: $color-danger;
+      border-color: $color-danger;
+    }
+  }
+
+  &--success {
+    background: $color-success;
+    border: 1px solid $color-success;
+
+    &--hover,
+    &:hover {
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--active,
+    &:active,
+    &:focus {
+      box-shadow: 0 -4px 10px -4px $gray-lightest inset,0 4px 10px -4px $gray inset;
+    }
+
+    &--disabled,
+    &:disabled {
+      background: $color-success;
+      border-color: $color-success;
+    }
+  }
+
+  &--lg {
+    font-size: $font-size--h3;
+  }
+
+  &--sm {
+    font-size: $font-size--small;
+    padding-top: ceil($field-padding-vertical / 2);
+    padding-bottom: ceil($field-padding-vertical / 2);
+  }
+
+  &--block {
+    width: 100%;
+    text-align: center;
+
+    & + & {
+      margin-top: ($line-height / 2);
+    }
+  }
+}
+
+.btn--prev {
+  position: relative;
+  display: block;
+  float: left;
+  padding-left: 50px;
+  background-color: $gray-light;
+}
+
+.btn--next::after,
+.btn--next::before,
+.btn--prev::after,
+.btn--prev::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  transform-origin: 1px center;
+  background: #ffffff;
+}
+
+.btn--prev::after {
+  transform: rotate(-45deg);
+  left: 25px;
+}
+
+.btn--prev::before {
+  transform: rotate(45deg);
+  left: 25px;
+}
+
+.btn--next::after {
+  transform: rotate(135deg);
+  right: 20px;
+}
+
+.btn--next::before {
+  transform: rotate(-135deg);
+  right: 20px;
+}
+
+.btn--next {
+  position: relative;
+  display: block;
+  float: right;
+  padding-right: 50px;
+}
+
+.btn--next span,
+.btn--prev span {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 1px;
+  background: #ffffff;
+  top: 50%;
+}
+
+.btn--prev span {
+  left: 25px;
+}
+
+.btn--next span {
+  right: 25px;
+}
